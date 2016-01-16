@@ -1,0 +1,16 @@
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Dependency directory
+node_modules
+bower_components

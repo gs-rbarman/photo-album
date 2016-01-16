@@ -1,0 +1,18 @@
+extends layout
+
+block content
+	h1 Photo Album
+	p Welcome to #{name}
+
+	form(method="POST", action="/")
+		label Upload
+		input(type="text", placeholder="Photo url" name="photoUrl")
+		input(type="text", placeholder="Caption" name="caption")
+		input(type="submit", submit="Submit")
+
+	ul 
+		each book, i in books
+			li
+				a(href=book._id)
+					img(title=book.caption, src=book.url, width=230, height=200)
+	
